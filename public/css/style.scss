@@ -1,0 +1,97 @@
+// Using Poppins Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+*{
+  
+    margin:0;
+}
+
+body{
+    background-color:white ;
+    font-family: 'Poppins';
+}
+
+.formContainer{
+    display: flex;
+    align-items: center;  
+    flex-direction: column-reverse;
+
+    a{
+        text-align: center;
+        font-size: 12px;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    input{
+        display:inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 30px;
+        border: 0.5px solid #bfbfbf99;
+        border-radius: 5px;
+    
+    }  
+    input:hover{
+        opacity: 50%;
+    }
+    input[type=submit]{
+        width: 100%;
+    }
+    // Form 
+  
+    .form-user{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            margin-bottom: 20px;
+        }
+        form{
+            width: 50%;
+        }
+        // CENTERING FORM CHOICE
+        .form-choice{
+            text-align: center;
+        }
+        .form-redirect,a{
+            font-size: 10px;
+
+        }
+        
+
+    }  
+    // resizing the images
+    .form-image{
+        object-fit: cover;
+        height: 30vh;
+        width: 100%;
+        box-shadow: -2px 0 10px 4px grey;
+
+    }
+}
+ @media(min-width:700px ) {
+ 
+     .formContainer{
+         flex-direction: row;
+         justify-content: space-between;
+         margin: 0;
+       
+        .form-user{
+            width: 100%;
+            padding: 20px;
+            align-items: flex-start;
+            .form-choice{
+                text-align: left;
+                margin-bottom: 40px;
+            }
+        }
+         .form-image{            
+            width: 60vw;
+            height: 100vh;
+        }
+     }
+    //  form image to 100 height
+    
+ }

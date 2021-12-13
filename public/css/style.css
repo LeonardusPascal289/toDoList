@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  font-family: 'Poppins';
+}
+
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.formContainer a {
+  text-align: center;
+  font-size: 12px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.formContainer input {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  border: 0.5px solid #bfbfbf99;
+  border-radius: 5px;
+}
+
+.formContainer input:hover {
+  opacity: 50%;
+}
+
+.formContainer input[type=submit] {
+  width: 100%;
+}
+
+.formContainer .form-user {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formContainer .form-user h2 {
+  margin-bottom: 20px;
+}
+
+.formContainer .form-user form {
+  width: 50%;
+}
+
+.formContainer .form-user .form-choice {
+  text-align: center;
+}
+
+.formContainer .form-user .form-redirect, .formContainer .form-user a {
+  font-size: 10px;
+}
+
+.formContainer .form-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30vh;
+  width: 100%;
+  -webkit-box-shadow: -2px 0 10px 4px grey;
+          box-shadow: -2px 0 10px 4px grey;
+}
+
+@media (min-width: 700px) {
+  .formContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+  }
+  .formContainer .form-user {
+    width: 100%;
+    padding: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .formContainer .form-user .form-choice {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .formContainer .form-image {
+    width: 60vw;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
