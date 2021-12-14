@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
 
 *{
-  
     margin:0;
 }
 
@@ -14,31 +13,36 @@ body{
 .formContainer{
     display: flex;
     align-items: center;  
-    flex-direction: column-reverse;
-
+    flex-direction: column-reverse;s
     a{
         text-align: center;
         font-size: 12px;
         margin-right: 10px;
         text-decoration: none;
     }
-    input{
-        display:inline-block;
+    input[type=text],input[type=password]{
+        box-sizing: border-box;
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 10px 30px;
+        border: 0.5px solid #bfbfbf99;
+        border-radius: 5px;
+    } 
+    input[type=submit] {
         width: 100%;
         margin-bottom: 10px;
         padding: 10px 30px;
         border: 0.5px solid #bfbfbf99;
         border-radius: 5px;
-    
-    }  
+    }
     input:hover{
         opacity: 50%;
     }
-    input[type=submit]{
-        width: 100%;
-    }
     // Form 
-  
+    form{
+        width: 50%;
+    }
     .form-user{
         margin-top: 20px;
         display: flex;
@@ -48,9 +52,7 @@ body{
         h2{
             margin-bottom: 20px;
         }
-        form{
-            width: 50%;
-        }
+       
         // CENTERING FORM CHOICE
         .form-choice{
             text-align: center;
@@ -79,6 +81,7 @@ body{
          margin: 0;
        
         .form-user{
+            box-sizing: border-box;
             width: 100%;
             padding: 20px;
             align-items: flex-start;

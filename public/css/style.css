@@ -21,15 +21,26 @@ body {
           flex-direction: column-reverse;
 }
 
-.formContainer a {
+.formContainer s
+a {
   text-align: center;
   font-size: 12px;
   margin-right: 10px;
   text-decoration: none;
 }
 
-.formContainer input {
+.formContainer input[type=text], .formContainer input[type=password] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
   display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  border: 0.5px solid #bfbfbf99;
+  border-radius: 5px;
+}
+
+.formContainer input[type=submit] {
   width: 100%;
   margin-bottom: 10px;
   padding: 10px 30px;
@@ -41,8 +52,8 @@ body {
   opacity: 50%;
 }
 
-.formContainer input[type=submit] {
-  width: 100%;
+.formContainer form {
+  width: 50%;
 }
 
 .formContainer .form-user {
@@ -64,10 +75,6 @@ body {
 
 .formContainer .form-user h2 {
   margin-bottom: 20px;
-}
-
-.formContainer .form-user form {
-  width: 50%;
 }
 
 .formContainer .form-user .form-choice {
@@ -99,6 +106,8 @@ body {
     margin: 0;
   }
   .formContainer .form-user {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     padding: 20px;
     -webkit-box-align: start;
