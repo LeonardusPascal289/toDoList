@@ -29,7 +29,7 @@ a {
   text-decoration: none;
 }
 
-.formContainer input[type=text], .formContainer input[type=password] {
+.formContainer input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -48,12 +48,24 @@ a {
   border-radius: 5px;
 }
 
-.formContainer input:hover {
-  opacity: 50%;
+.formContainer input:last-of-type {
+  color: white;
+  background-color: #3976e8;
+  cursor: pointer;
+}
+
+.formContainer input:last-of-type :hover {
+  opacity: 0.5;
 }
 
 .formContainer form {
+  margin-top: 2rem;
   width: 50%;
+  padding-bottom: 30px;
+}
+
+.formContainer form h2 {
+  margin-top: 20px;
 }
 
 .formContainer .form-user {
@@ -117,6 +129,9 @@ a {
   .formContainer .form-user .form-choice {
     text-align: left;
     margin-bottom: 40px;
+  }
+  .formContainer .form-user form {
+    width: 75%;
   }
   .formContainer .form-image {
     width: 60vw;

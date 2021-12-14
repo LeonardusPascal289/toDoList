@@ -20,7 +20,7 @@ body{
         margin-right: 10px;
         text-decoration: none;
     }
-    input[type=text],input[type=password]{
+    input{
         box-sizing: border-box;
         width: 100%;
         display: inline-block;
@@ -36,12 +36,22 @@ body{
         border: 0.5px solid #bfbfbf99;
         border-radius: 5px;
     }
-    input:hover{
-        opacity: 50%;
+    input:last-of-type{
+        color: white;
+        background-color: rgb(57, 118, 232);
+        cursor: pointer;
+        :hover{
+            opacity: 0.5;
+        }
     }
     // Form 
     form{
+        margin-top: 2rem;
         width: 50%;
+        padding-bottom: 30px;
+        h2{
+            margin-top: 20px;
+        }
     }
     .form-user{
         margin-top: 20px;
@@ -88,6 +98,9 @@ body{
             .form-choice{
                 text-align: left;
                 margin-bottom: 40px;
+            }
+            form{
+                width: 75%;
             }
         }
          .form-image{            
